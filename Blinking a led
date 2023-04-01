@@ -1,0 +1,13 @@
+//blinking a led 
+void setup(){
+ //the anode of led is given to the D15 in esp32
+ pinMode(15,OUTPUT); 
+}
+void loop(){
+ digitalWrite(15,HIGH);
+ //1000 indicates one second delay
+ delay(1000);
+ digitalWrite(15,LOW);
+ delay(1000);
+}
+ 
